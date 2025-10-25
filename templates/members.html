@@ -3,23 +3,214 @@
 
 <head>
     <title> Our Team | Young Sparks </title> <!-- Browser tab title -->
-    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style> /* css */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            overflow-x: hidden; 
+            }
 
+        * {
+        box-sizing: inherit; /* ensures padding/border don’t add to width */
+        }
+
+        .center_text {
+            margin: 30px;
+            font-size: 20px;   
+            text-align: center;
+        }
+
+        /* grid styling */
+        .first_grid {
+            display:grid;
+            grid-template-columns: repeat(3, 33%);
+            gap: 15px;
+            padding: 15px;
+            justify-content: center;
+        }
+
+        .second_grid {
+            display:grid;
+            grid-template-columns: repeat(2, 33%);
+            gap: 15px;
+            padding: 15px;
+            justify-content: center;
+        }
+
+        /* stack vertically if screen small*/
+        @media (max-width: 650px) {
+            .first_grid, .second_grid {
+                grid-template-columns: 1fr; 
+            }
+        }
+
+        .member_box {
+            border: 2px solid black;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            background-color: #f5f5f5 ;
+            transition: transform 0.1s;
+        }
+        
+        .member_box:hover {
+            transform: scale(1.01);
+        }
+
+        .member_photo {
+            width: 90%;
+            aspect-ratio: 9 / 12; 
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+
+        .member_box h1 {
+            margin: 10px 0 5px 0;
+        }
+
+        .member_box p {
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        /* navbar styling */
+        .navbar {
+            width: 100%;
+            background-color: #f5f5f5;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            margin-bottom: 30px;
+            position:sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* navbar link (a) styling */
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 18x;
+            margin: 0 10px;
+            transition: transform 0.1s;
+        }
+
+        .navbar a:hover {
+            transform: scale(1.01);
+        }
+
+        .navorg {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav_links {
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .bubbly_button {
+            background-color: #f8f8f8;
+            color: black;
+            padding: 10px 22px;
+            border: 2px solid black;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.1s;
+        }
+
+        .bubbly_button:hover {
+            background-color: #f8f8f8;
+            transform: scale(1.01);
+        }
     </style>
 </head>
 
 <body>
-    <h1>Our Team</h1>
+    <div class="center_text">
+        <h1> Our Team </h1>
+    </div>
     
-    <h2>Jonathan Xu</h2>
+    <div class="navbar"> <!-- navbar -->
+        <a class=navorg href="index.html"> Young Sparks STEM </a>
 
-    <h2>Steven Shao</h2>
+        <div class="nav_links">
+            <a href="index.html"> Home </a>
+            <a href="projects.html"> Our Projects </a>
+            <a href="members.html"> Our Team </a>
+            <!--youtube channel link later-->
+        </div>
+    </div>
 
-    <h2>Lucian Bai</h2>
+    <!-- first row -->
+    <div class="first_grid">
+        <div class="member_box">
+            <h1>Jonathan Xu</h1>
 
-    <h2>Joshua Wang</h2>
+            <p>
+                did yk i'm 2023 vex world champ
+            </p>
 
-    <h2>Matthew Pan</h2>
+            <img class="member_photo" src="images/jonathan_photo.jpg" alt="Jonathan Photo">
+        </div>
+
+        <div class="member_box">
+            <h1>Steven Shao</h1>
+
+            <p>
+                im 15k in clash, i posted this on my story
+            </p>
+            <img class="member_photo" src="images/steven_photo.jpg" alt="Steven Photo">
+        </div>
+
+        <div class="member_box">
+            <h1>Lucian Bai</h1>
+
+            <p>
+                i watched jonathan win vex live, it was OUR win
+            </p>
+
+            <img class="member_photo" src="images/lucian_photo.jpg" alt="Lucian Photo">
+        </div>
+    </div>
+
+    <!--second row-->
+    <div class="second_grid">
+        <div class="member_box">
+            <h1>Joshua Wang</h1>
+
+            <p>
+                unstoppable in both 10 ft and 8ft courts, can not be nerfed
+            </p>
+
+            <img class="member_photo" src="images/joshua_photo.jpg" alt="Joshua Photo">
+        </div>
+
+        <div class="member_box">
+            <h1>Matthew Pan</h1>
+
+            <p>
+                bif recently hit 10k on clash and deserves unparamounted glaze
+            </p>
+
+            <img class="member_photo" src="images/matthew_photo.jpg" alt="Matthew Photo">
+        </div>
+    </div>
 </body>
 
 </html>
