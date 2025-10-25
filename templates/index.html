@@ -3,45 +3,206 @@
 
 <head>
     <title> Home | Young Sparks STEM </title> <!-- Browser tab title -->
-
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <style> /* css */
-        body {
-            font-family: Arial, sans-serif;   
-            line-height: 1.5;                 
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            overflow-x: hidden; 
+            }
+
+        * {
+        box-sizing: inherit; /* ensures padding/border don’t add to width */
+        }
+
+        .center_text {
+            margin: 30px;
+            font-size: 20px;   
             text-align: center;
+        }
+
+        .row, .row_reverse {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center; 
+            gap: 30px; 
+            margin: 30px;
+            background-color: #f5f5f5;
+        }
+
+        .row {
+            margin-right: 60px;
+        }
+
+        .row_reverse {
+            flex-direction: row-reverse;
+            margin-left: 60px;
+        }
+
+        .text {
+            flex: 0 0 63%;
+            font-size: 18px;
+            padding: 30px;
+            border: 1px solid black;
+            border-radius: 12px;
+            line-height: 1.5;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        .photo {
+            flex: 0 0 37%;
+            border: 1px solid black;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 0; 
+            box-sizing: border-box;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-size: cover; /* stretch to fill */
+            background-position: center;
+            background-repeat: no-repeat;
+
+            height: 300px;
+        }
+
+        /* navbar styling */
+        .navbar {
+            width: 100%;
+            background-color: #f5f5f5;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            margin-bottom: 30px;
+            position:sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+        }
+
+        /* navbar link (a) styling */
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 18x;
+            margin: 0 10px;
+            transition: transform 0.1s;
+        }
+
+        .navbar a:hover {
+            transform: scale(1.01);
+        }
+
+        .navorg {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav_links {
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .bubbly_button {
+            background-color: #f8f8f8;
+            color: black;
+            padding: 10px 22px;
+            border: 2px solid black;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.1s;
+        }
+
+        .bubbly_button:hover {
+            background-color: #f8f8f8;
+            transform: scale(1.01);
         }
     </style>
 </head>
 
 <body>
-    <h1>Home Page</h1>
+    <div class="center_text">
+        <h1> Home Page</h1>
+    </div>
+    
+    <div class="navbar"> <!-- navbar -->
+        <a class="navorg" href="index.html"> Young Sparks STEM </a>
 
-    <div> <!-- Intro/mission section -->
-        <h2>Our Mission</h2>
-        <p>
-            We are a small engineering team that comes together to design and build projects for fun, 
-            curiosity, and problem-solving. Our main goal is exploring engineering creatively, 
-            while also tackling real-world challenges, such as environmental issues.
-        </p>
+        <div class="nav_links">
+            <a href="index.html"> Home </a>
+            <a href="projects.html"> Our Projects </a>
+            <a href="members.html"> Our Team </a>
+            <!--youtube channel link later-->
+        </div>
+    </div>
+    
+    <!-- Intro/mission section -->
+    <div class="row">
+        <div class="text">
+            <h2>Who We Are</h2>
+            <p>
+                Young Sparks STEM was started by a group of high school students in 2025. The team focuses on designing, building, 
+                and experimenting with projects that address real-world challenges, including environmental issues. Through hands-on 
+                projects, problem-solving, and creative experimentation, Young Sparks STEM aims to develop practical engineering skills, 
+                explore innovative ideas, and learn how to tackle complex problems collaboratively.
+            </p>
+        </div>
+
+        <div class="photo" style="background-image: url('images/joshua_photo.jpg');"></div>
     </div>
 
-    <div> <!-- Projects section -->
-        <h2><a href="projects.html" style="color: inherit;"> Our Projects </a></h2> <!-- press header to go to projects page -->
-        <p>
-           Explore our engineering projects, from experimenting with fun, creative ideas to developing 
-           solutions for real-world problems. 
-        </p>
-    </div>
+    <!-- Projects section -->
+    <div class="row_reverse">
+        <div class="text"> 
+            <h2> Our Projects </h2> <!-- press header to go to projects page -->
+            <p class="description_text">
+                Explore our engineering projects, where we experiment with creative ideas and build hands-on solutions. 
+                Each project focuses on applying practical skills and problem-solving techniques to real-world challenges, 
+                while also testing new concepts and designs.
+            </p>
 
-    <div> <!-- members section -->
-        <h2><a href="members.html" style="color: inherit;"> Our Team </a></h2> <!-- press header to go to member page -->
-        <p>
-            Meet the people behind our team that bring our projects to life.
-        </p>
-    </div>
+            <a href="projects.html">
+                <button class = "bubbly_button">Explore Our Projects</button>
+            </a>
+        </div>
 
-    <div> <!-- question or contact form later -->
-        <h2><a>Ask Us Questions!</a></h2> <!-- for Q and A form later -->
+        <div class="photo" style="background-image: url('images/joshua_photo.jpg');"></div>
+    </div>
+    
+    <!-- members section -->
+    <div class="row">
+        <div class="text"> 
+            <h2> Our Team </h2> <!-- press header to go to member page -->
+            <p class="description_text">
+                Meet the people behind our team who handle the planning, building, and testing of our projects. 
+                Each member focuses on different aspects, from design to hands-on construction, working together 
+                to complete our engineering challenges.
+            </p>
+
+            <a href="members.html">
+                <button class = "bubbly_button">Our Team</button>
+            </a>
+        </div>
+
+        <div class="photo" style="background-image: url('images/joshua_photo.jpg');"></div>
     </div>
 </body>
 

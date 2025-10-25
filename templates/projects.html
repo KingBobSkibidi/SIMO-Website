@@ -2,18 +2,191 @@
 <html>
 
 <head>
-    <title> Our Projects | Young Sparks </title> <!-- Browser tab title -->
-    <style>
+    <title> Our Projects | Young Sparks STEM </title> <!-- Browser tab title -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style> /* css */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            overflow-x: hidden; 
+            }
 
+        * {
+        box-sizing: inherit; /* ensures padding/border don’t add to width */
+        }
+
+        .center_text {
+            margin: 30px;
+            font-size: 20px;   
+            text-align: center;
+        }
+
+        .row, .row_reverse {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center; 
+            gap: 30px; 
+            margin: 30px;
+            background-color: #f5f5f5;
+        }
+
+        .row {
+            margin-right: 60px;
+        }
+
+        .row_reverse {
+            flex-direction: row-reverse;
+            margin-left: 60px;
+        }
+
+        .text {
+            flex: 0 0 63%;
+            font-size: 18px;
+            padding: 30px;
+            border: 1px solid black;
+            border-radius: 12px;
+            line-height: 1.5;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        .photo {
+            flex: 0 0 37%;
+            border: 1px solid black;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 0; 
+            box-sizing: border-box;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-size: cover; /* stretch to fill */
+            background-position: center;
+            background-repeat: no-repeat;
+
+            height: 300px;
+        }
+
+        /* navbar styling */
+        .navbar {
+            width: 100%;
+            background-color: #f5f5f5;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            margin-bottom: 30px;
+            position:sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* navbar link (a) styling */
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 18x;
+            margin: 0 10px;
+            transition: transform 0.1s;
+        }
+
+        .navbar a:hover {
+            transform: scale(1.01);
+        }
+
+        .navorg {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav_links {
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .bubbly_button {
+            background-color: #f8f8f8;
+            color: black;
+            padding: 10px 22px;
+            border: 2px solid black;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.1s;
+        }
+
+        .bubbly_button:hover {
+            background-color: #f8f8f8;
+            transform: scale(1.01);
+        }
     </style>
 </head>
 
 <body>
-    <h1>Our Projects</h1>
+    <div class="center_text">
+        <h1> Our Projects </h1>
+    </div>
     
-    <div>
-        <h2><a>Go-kart Couch</a></h2> <!-- link to video or album later-->
+    <div class="navbar"> <!-- navbar -->
+        <a class="navorg" href="index.html"> Young Sparks STEM </a>
 
+        <div class="nav_links">
+            <a href="index.html"> Home </a>
+            <a href="projects.html"> Our Projects </a>
+            <a href="members.html"> Our Team </a>
+            <!--youtube channel link later-->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="text">
+            <h2><a>Go-kart EV Couch</a></h2> <!-- link to video or album later-->
+
+            <p>
+                A creative engineering project combining comfort and motion — a functioning go-kart built 
+                from a couch frame, designed for both fun and innovation. This project explores mechanics, 
+                power systems, and teamwork in a unique way.
+            </p>
+
+            <a href="members.html">
+                <button class = "bubbly_button">Learn More</button>
+            </a>
+        </div>
+
+        <div class="photo" style="background-image: url('images/joshua_photo.jpg');"></div>
+    </div>
+
+    <div class="row_reverse">
+        <div class="text">
+            <h2><a>Hand Crank Generator</a></h2> <!-- link to video or album later-->
+
+            <p>
+                A compact, manually powered generator that converts human effort into electrical energy. 
+                This project demonstrates the principles of energy conversion and sustainability through 
+                hands-on design and experimentation.
+            </p>
+
+            <a href="index.html">
+                <button class = "bubbly_button">Learn More</button>
+            </a>
+        </div>
+
+        <div class="photo" style="background-image: url('images/joshua_photo.jpg');"></div>
     </div>
 </body>
 
