@@ -16,13 +16,13 @@ html, body {
         .center_text {
             margin: 30px;
             font-size: 20px;   
-            text-align: center; /**/
+            text-align: center; 
         }
 
         .row, .row_reverse {
             display: flex;
             flex-wrap: nowrap;
-            align-items: center; 
+            align-items: stretch; 
             gap: 30px; 
             margin: 30px;
             background-color: #f5f5f5;
@@ -60,11 +60,9 @@ html, body {
             justify-content: center;
             align-items: center;
 
-            background-size: cover; /* stretch to fill */
+            background-size: cover; 
             background-position: center;
             background-repeat: no-repeat;
-
-            height: 300px;
         }
 
         /* navbar styling */
