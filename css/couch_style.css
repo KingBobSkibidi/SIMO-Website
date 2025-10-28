@@ -64,7 +64,26 @@ html, body {
             background-position: center;
             background-repeat: no-repeat;
 
-            height: 310px;
+            height: 255px;
+        }
+
+        .video {
+            flex: 0 0 37%;
+            border: 1px solid black;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 0; 
+            box-sizing: border-box;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-size: cover; /* stretch to fill */
+            background-position: center;
+            background-repeat: no-repeat;
+
+            height: 255px;
         }
 
         /* navbar styling */
