@@ -44,6 +44,14 @@ box-sizing: inherit;
     margin-left: 60px;
 }
 
+.calculate .text {
+    flex: 0 0 calc(26% - 10px); 
+}
+
+.calculate .video {
+    flex: 0 0 calc(37% - 10px);
+}
+
 .text {
     flex: 0 0 63%;
     font-size: 18px;
@@ -80,8 +88,6 @@ box-sizing: inherit;
     object-fit: cover;   
     object-position: center;
     display: block;
-    
-    height: 300px;
 }
 
 /* navbar styling */
