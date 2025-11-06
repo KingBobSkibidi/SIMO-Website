@@ -20,9 +20,18 @@
 
             <div class="nav_links">
                 <a href="index.html"> Home </a>
-                <a href="projects.html"> Our Projects </a>
+
+                <div class="dropdown">
+                    <a href="projects.html" class="dropbtn"> Our Projects &#9662;</a>
+                    
+                    <div class="dropdown-content">
+                        <a href="couch.html"> Go Kart Couch </a>
+                        <a href="couch.html"> Hand Crank Generator </a>
+                    </div>
+                </div>
+
                 <a href="members.html"> Our Team </a>
-                <!--youtube channel link later-->
+                <!--socials links here later-->
             </div>
         </div>
 
@@ -31,9 +40,10 @@
                 <h2><a>Gathering Materials</a></h2> <!-- link to video or album later-->
 
                 <p>
-                    We first collected all the materials needed for the project. Wood, nails, screws, and bolts were picked up 
-                    from Home Depot, while a used couch was found on the side of the street. Additional tools were borrowed 
-                    from the garage, and the wheels for the cart were ordered online from Amazon.
+                    We first collected all the materials needed for the project. Wood, nails, screws, and washers were picked up 
+                    from Home Depot, and we found a used couch was found on the side of the street. The wheels, arduino kit, and 
+                    soldering kit were ordered online from Amazon. Additional tools such as our saw and power drill were obtained
+                    from our garage.
                 </p>
             </div>
 
@@ -45,9 +55,7 @@
                 <h2><a>Cutting Wood</a></h2>
 
                 <p>
-                    The frame of the cart was constructed by carefully cutting the wood to the right sizes. The pieces
-                    were nailed together to form a sturdy base, and the four non-motorized wheels were attached to the 
-                    corners, allowing the frame to move freely in any direction.
+                    The frame of the cart was constructed by cutting the 2x4 wood planks to the right sizes with a dull saw we found. 
                 </p>
             </div>
 
@@ -59,9 +67,9 @@
                 <h2><a>Frame and wheels</a></h2>
 
                 <p>
-                    The frame of the cart was constructed by carefully cutting the wood to the right sizes. The pieces
-                    were nailed together to form a sturdy base, and the four non-motorized wheels were attached to the 
-                    corners, allowing the frame to move freely in any direction.
+                    The pieces of wood were drilled together with four nails on each end to form a stable base. The four 
+                    non-motorized wheels were drilled to the corners of the frame with four nails each, allowing the 
+                    frame to be secure and move freely in any direction.
                 </p>
             </div>
 
@@ -73,45 +81,51 @@
                 <h2><a>Soldering</a></h2> 
 
                 <p>
-                    The wheels with built-in motors were wired by soldering connections to ensure proper power flow. Attention 
-                    was paid to make sure the wiring was secure and well-insulated to avoid any short circuits during operation.
+                    The wheels with built-in motors were wired by soldering connections and heat shrinking to ensure proper power 
+                    flow. Attention was paid to make sure the wiring was secure to ensure the wheels would drive properly and power
+                    the entire build.
                 </p>
             </div>
 
-            <div class="video" style="height: 300px;">
-                <video src="videos/soldering1.mp4" autoplay muted loop></video>
+            <div class="video" style="height: 260px;">
+                <video src="videos/soldering.mp4" autoplay muted loop></video>
             </div>
         </div>
 
         <div class="row">
             <div class="text">
-                <h2><a>wires</a></h2>
-
-                <p>
-                    Finally, all components were assembled together. The couch was mounted on the wooden frame, wheels and motor 
-                    wiring were double-checked, and the cart was tested to confirm that everything functioned smoothly as a complete unit.
-                </p>
-            </div>
-        
-            <div class="photo" style="background-image: url('images/couch4.jpg');"></div>
-        </div>
-
-        <div class="row_reverse">
-            <div class="text">
                 <h2><a>Coding</a></h2>
 
                 <p>
-                    For the coding part, we programmed the motorized wheels using Arduino and C++. We uploaded the code to the Arduino 
-                    board and connected it to our motorized wheels in order to control movement with our joystick.
+                    For the code to control our build, we programmed the motorized wheels using Arduino and C++. We uploaded the code 
+                    to the Arduino board and connected it to our motorized wheels in order to control movement with our joystick.
                 </p>
             </div>
 
             <div class="photo" style="background-image: url('images/code.jpg'); background-position: top;"></div>
         </div>
 
+        <div class="row_reverse">
+            <div class="text">
+                <h2><a>Wiring</a></h2>
+
+                <p>
+                    We added the wiring board on our frame, connecting our motorized wheels, joystick, batteries and arduino all together
+                    to allow the couch to move from the joystick's control alone.
+                </p>
+            </div>
+        
+            <div class="photo" style="background-image: url('images/couch4.jpg');"></div>
+        </div>
+
         <div class="row calculate">
             <div class="text">
                 <h2><a>In Action</a></h2>
+
+                <p>
+                    All components were assembled together, the couch was mounted on the wooden frame and the cart was tested to confirm 
+                    that everything functioned smoothly
+                </p>
             </div>
 
             <div class="video">
