@@ -82,6 +82,7 @@ box-sizing: inherit;
 .video video {
     width: 100%;
     height: 100%;
+    border-radius: 8px;
     object-fit: cover;   
     object-position: center;
     display: block;
@@ -158,7 +159,7 @@ box-sizing: inherit;
 .dropdown-content a {
     font-size: 15px;
     padding: 10px 14px;
-    white-space: wrap;
+    white-space: normal;
     transition: transform 0.1s;
 }
 
@@ -178,7 +179,7 @@ box-sizing: inherit;
 }
 
 .bubbly_button {
-    background-color: #f8f8f8;
+    background-color: #fafafa;
     color: black;
     padding: 10px 22px;
     border: 2px solid black;
