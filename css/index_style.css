@@ -13,6 +13,16 @@ html, body {
     box-sizing: inherit;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.1s;
+}
+
+a:hover { /*doesnt do anything rn */
+    transform: scale(1.01);
+} 
+
 .container {
     max-width: 1500px;
     margin: 0 auto;
@@ -35,14 +45,12 @@ html, body {
 }
 
 .row {
-    margin-right: 60px;
     gap: 30px; 
     margin: 30px;
 }
 
 .row_reverse {
     flex-direction: row-reverse;
-    margin-left: 60px;
     gap: 30px; 
     margin: 30px;
 }
@@ -72,6 +80,7 @@ html, body {
     flex: 0 0 37%;
     border: 1px solid black;
     border-radius: 8px;
+
     display: flex;
     justify-content: center;
     align-items: center;

@@ -27,6 +27,7 @@ box-sizing: inherit;
 }
 
 .row, .row_reverse {
+    position: relative;
     display: flex;
     flex-wrap: nowrap;
     align-items: stretch; 
@@ -35,13 +36,8 @@ box-sizing: inherit;
     background-color: #f5f5f5;
 }
 
-.row {
-    margin-right: 60px;
-}
-
 .row_reverse {
     flex-direction: row-reverse;
-    margin-left: 60px;
 }
 
 .calculate .text {
@@ -53,6 +49,7 @@ box-sizing: inherit;
 }
 
 .text {
+    position: relative;
     flex: 0 0 63%;
     font-size: 18px;
     padding: 30px;
@@ -66,7 +63,6 @@ box-sizing: inherit;
     flex: 0 0 37%;
     border: 1px solid black;
     border-radius: 8px;
-    padding: 0;
 
     display: flex;
     justify-content: center;
@@ -82,10 +78,36 @@ box-sizing: inherit;
 .video video {
     width: 100%;
     height: 100%;
+    border: 1px solid black;
     border-radius: 8px;
     object-fit: cover;   
     object-position: center;
     display: block;
+}
+
+.background {
+    position: relative;
+    padding: 20px;
+
+    border: 1px solid black;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay_text {
+    position: relative;
+    color: black;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 20px
 }
 
 /* navbar styling */
