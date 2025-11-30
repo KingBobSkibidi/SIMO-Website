@@ -13,6 +13,16 @@ html, body {
 box-sizing: inherit; 
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.1s;
+}
+
+a:hover { /*doesnt do anything rn */
+    transform: scale(1.01);
+} 
+
 .container {
     max-width: 1500px;
     margin: 0 auto;
@@ -98,16 +108,9 @@ box-sizing: inherit;
 
 /* navbar link styling */
 .navbar a {
-    text-decoration: none;
-    color: black;
     padding: 10px 20px 10px 0;
     font-size: 18px;
     margin: 0 10px;
-    transition: transform 0.1s;
-}
-
-.navbar a:hover {
-    transform: scale(1.01);
 }
 
 .navorg {
@@ -161,9 +164,6 @@ box-sizing: inherit;
 
 .dropdown-content a:last-child {
     padding-bottom: 20px;
-}
-.dropdown-content a:hover {
-    transform: scale(1.01);
 }
 
 .dropdown:hover .dropdown-content {
