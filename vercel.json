@@ -1,14 +1,8 @@
 {
   "rewrites": [
-    { "source": "/index.html", "destination": "/templates/index.html" },
-    { "source": "/projects.html", "destination": "/templates/projects.html" },
-    { "source": "/couch.html", "destination": "/templates/couch.html" },
-    { "source": "/generator.html", "destination": "/templates/generator.html" },
-    { "source": "/members.html", "destination": "/templates/members.html" }
+    { "source": "/couch", "destination": "/templates/couch.html" },
+    { "source": "/generator", "destination": "/templates/generator.html" },
+    { "source": "/members", "destination": "/templates/members.html" }
   ],
-  "routes": [
-    { "src": "/css/(.*)", "dest": "/css/$1" },
-    { "src": "/images/(.*)", "dest": "/templates/images/$1" },
-    { "src": "/videos/(.*)", "dest": "/templates/videos/$1" }
-  ]
+  "cleanUrls": true
 }
