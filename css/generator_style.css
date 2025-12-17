@@ -205,3 +205,36 @@ a:hover { /*doesnt do anything rn */
     background-color: #f8f8f8;
     transform: scale(1.01);
 }
+
+/* Tablets */
+@media (max-width: 768px) {
+    .row, .row_reverse {
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px;
+        height: auto;
+    }
+
+    .photo, .video, .background {
+        flex: 1 1 100%;
+    }
+
+    .overlay_text {
+        padding: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+    p  { font-size: 0.9rem; }
+
+    .navbar a { font-size: 14px; padding: 8px 0; }
+    .nav_links { flex-direction: column; gap: 10px; align-items: flex-start; }
+
+    .overlay_text { padding: 15px; font-size: 14px; }
+    .photo, .video { height: 180px; }
+}

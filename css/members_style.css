@@ -186,3 +186,39 @@ a:hover { /*doesnt do anything rn */
     background-color: #f8f8f8;
     transform: scale(1.01);
 }
+
+/* Tablets */
+@media (max-width: 950px) {
+    .first_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .second_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Small Tablets/Large Phones */
+@media (max-width: 650px) {
+    .first_grid, .second_grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .member_box p {
+        font-size: 16px;
+    }
+
+    .member_box h1 {
+        font-size: 18px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+
+    .navbar a { font-size: 14px; padding: 8px 0; }
+    .nav_links { flex-direction: column; gap: 10px; align-items: flex-start; }
+
+    .member_photo { width: 100%; aspect-ratio: auto; }
+}
