@@ -1,8 +1,4 @@
 {
-  "rewrites": [
-    { "source": "/couch", "destination": "/templates/couch.html" },
-    { "source": "/generator", "destination": "/templates/generator.html" },
-    { "source": "/members", "destination": "/templates/members.html" }
-  ],
+  "rootDirectory": "templates",
   "cleanUrls": true
 }
