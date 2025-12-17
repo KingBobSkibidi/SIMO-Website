@@ -206,6 +206,17 @@ a:hover {
     transform: scale(1.01);
 }
 
+.soldering-video {
+    height: auto; 
+}
+
+/* Desktop only */
+@media (min-width: 769px) {
+    .soldering-video {
+        height: 260px;
+    }
+}
+
 /* Tablets */
 @media (max-width: 768px) {
     .row, .row_reverse {
