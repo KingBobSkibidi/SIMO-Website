@@ -217,7 +217,7 @@ a:hover { /*doesnt do anything rn */
     h1 { font-size: 1.8rem; }
     h2 { font-size: 1.4rem; }
 
-    .navbar a { font-size: 14px; padding: 8px 0; }
+    .navbar a { font-size: 14px; padding: 6px 0; }
     .nav_links { flex-direction: column; gap: 8px; align-items: flex-start; }
 
     .member_photo { width: 100%; aspect-ratio: auto; }
