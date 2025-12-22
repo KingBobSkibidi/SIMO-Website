@@ -229,7 +229,7 @@ a:hover {
     p  { font-size: 0.9rem; }
 
     .navbar a { font-size: 14px; padding: 8px 0; }
-    .nav_links { flex-direction: column; gap: 10px; align-items: flex-start; }
+    .nav_links { flex-direction: column; gap: 8px; align-items: flex-start; }
 
-    .overlay_text { padding: 15px; font-size: 14px; }
+    .overlay_text { padding: 10px, 15px; font-size: 14px; }
 }
