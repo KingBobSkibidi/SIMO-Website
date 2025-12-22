@@ -204,6 +204,7 @@ a:hover { /*doesnt do anything rn */
         margin: 20px;
         gap: 20px;
         height: auto;
+        width: auto;
     }
 
     .photo, .background {
@@ -220,6 +221,16 @@ a:hover { /*doesnt do anything rn */
 
 /* Phones */
 @media (max-width: 480px) {
+    .row, .row_reverse, .normal_row {
+        width: auto;      
+        margin: 15px;    
+    }
+
+    .photo { 
+        flex: 1 1 100%;
+        min-height: 180px; 
+    }  
+
     h1 { font-size: 1.8rem; }
     h2 { font-size: 1.4rem; }
     p  { font-size: 0.9rem; }
@@ -228,5 +239,4 @@ a:hover { /*doesnt do anything rn */
     .nav_links { flex-direction: column; gap: 10px; align-items: flex-start; }
 
     .overlay_text { padding: 15px; font-size: 14px; }
-    .photo { min-height: 180px; }
 }

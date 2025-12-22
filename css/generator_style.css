@@ -229,6 +229,11 @@ a:hover { /*doesnt do anything rn */
 
 /* Phones */
 @media (max-width: 480px) {
+    .photo, .video { 
+        flex: 1 1 100%;
+        min-height: 180px; 
+    }  
+
     h1 { font-size: 1.8rem; }
     h2 { font-size: 1.4rem; }
     p  { font-size: 0.9rem; }
@@ -237,5 +242,4 @@ a:hover { /*doesnt do anything rn */
     .nav_links { flex-direction: column; gap: 10px; align-items: flex-start; }
 
     .overlay_text { padding: 15px; font-size: 14px; }
-    .photo, .video { min-height: 180px; }
 }
