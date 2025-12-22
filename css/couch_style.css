@@ -249,7 +249,7 @@ a:hover {
     h2 { font-size: 1.4rem; }
     p  { font-size: 0.9rem; }
 
-    .navbar a { font-size: 14px; padding: 6px 0; }
+    .navbar a { font-size: 14px; padding: 4px 0; }
     .nav_links { flex-direction: column; gap: 8px; align-items: flex-start; }
 
     .overlay_text { padding: 10px 15px; font-size: 14px; }
