@@ -217,6 +217,7 @@ a:hover { /*doesnt do anything rn */
 
     .photo, .video, .background {
         flex: 1 1 100%;
+        min-height: 260px;
     }
 
     .overlay_text {
@@ -236,5 +237,5 @@ a:hover { /*doesnt do anything rn */
     .nav_links { flex-direction: column; gap: 10px; align-items: flex-start; }
 
     .overlay_text { padding: 15px; font-size: 14px; }
-    .photo, .video { height: 180px; }
+    .photo, .video { min-height: 180px; }
 }
