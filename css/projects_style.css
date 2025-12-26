@@ -219,6 +219,13 @@ a:hover {
 
 /* Phones */
 @media (max-width: 480px) {
+    .row, .row_reverse {
+        flex-direction: column;
+        gap: 15px;
+        margin: 15px;
+        height: auto;
+    }
+    
     .photo { 
         flex: 1 1 100%;
         min-height: 180px; 

@@ -204,7 +204,6 @@ a:hover { /*doesnt do anything rn */
         margin: 20px;
         gap: 20px;
         height: auto;
-        width: auto;
     }
 
     .photo, .background {
@@ -221,9 +220,11 @@ a:hover { /*doesnt do anything rn */
 
 /* Phones */
 @media (max-width: 480px) {
-    .row, .row_reverse, .normal_row {
-        width: auto;      
-        margin: 15px;    
+    .row, .row_reverse {
+        flex-direction: column;
+        gap: 15px;
+        margin: 15px;
+        height: auto;
     }
 
     .photo { 
