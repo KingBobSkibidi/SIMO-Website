@@ -227,7 +227,7 @@ a:hover {
 
     .photo, .video, .background {
         flex: 1 1 100%;
-        min-height: 260px;
+        height: 260px;
     }
 
     .overlay_text {

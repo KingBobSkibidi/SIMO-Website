@@ -221,7 +221,7 @@ a:hover {
 @media (max-width: 480px) {
     .photo { 
         flex: 1 1 100%;
-        min-height: 180px; 
+        height: 180px; 
     }  
 
     h1 { font-size: 1.8rem; }
